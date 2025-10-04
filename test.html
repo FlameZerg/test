@@ -2,7 +2,8 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>简单静态HTML页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vercel 静态页面示例</title>
     <style>
         body {
             font-family: "Microsoft YaHei", Arial, sans-serif;
@@ -27,12 +28,30 @@
             color: #666;
             font-size: 18px;
         }
+        .vercel-badge {
+            margin-top: 32px;
+        }
+        .vercel-badge img {
+            height: 32px;
+        }
+        a {
+            color: #0070f3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>欢迎来到我的静态HTML页面</h1>
-        <p>这是一个简单的静态网页示例，包含基本的HTML结构和样式。</p>
+        <h1>欢迎来到 Vercel 静态页面</h1>
+        <p>本页面可直接部署在 <a href="https://vercel.com/" target="_blank" rel="noopener">Vercel</a> 平台，支持极速全球访问。</p>
+        <div class="vercel-badge">
+            <a href="https://vercel.com/" target="_blank" rel="noopener">
+                <img src="https://vercel.com/button" alt="Deploy with Vercel">
+            </a>
+        </div>
     </div>
 </body>
 </html>
